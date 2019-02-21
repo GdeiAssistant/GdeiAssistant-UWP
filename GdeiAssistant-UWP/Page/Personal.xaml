@@ -1,0 +1,88 @@
+﻿<Page
+    x:Class="GdeiAssistant.Page.Personal"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Dark">
+                    <SolidColorBrush x:Key="ButtonBackground" Color="DimGray"/>
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="Light">
+                    <SolidColorBrush x:Key="ButtonBackground" Color="Gainsboro"/>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+        </ResourceDictionary>
+
+    </Page.Resources>
+
+    <RelativePanel>
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="VisualStateSmallPhone">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Username.Width" Value="200" />
+                        <Setter Target="Password.Width" Value="200"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualStateBigPhone">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="350"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Username.Width" Value="250" />
+                        <Setter Target="Password.Width" Value="250"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualStateTablet">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="500"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Username.Width" Value="350" />
+                        <Setter Target="Password.Width" Value="350"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualStateDesktop">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Username.Width" Value="450" />
+                        <Setter Target="Password.Width" Value="450"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <StackPanel Name="LoginPanel" Orientation="Vertical" Visibility="Collapsed" RelativePanel.AlignHorizontalCenterWithPanel="True">
+            <Image Source="/Assets/Logo.png" Width="150" Height="Auto" Margin="0,35,0,15" Stretch="Uniform" />
+            <TextBox Name="Username"  PlaceholderText="请输入用户名" Margin="0,15,0,0" KeyDown="Username_KeyDown"/>
+            <PasswordBox Name="Password"  PlaceholderText="请输入密码" Margin="0,15,0,0" KeyDown="Password_KeyDown"/>
+            <Button Name="LoginButton" Content="登录" Width="150" HorizontalAlignment="Center" Margin="0,20" Click="LoginButton_Click"/>
+            <ProgressBar Name="ProgressBar" Width="100" Height="Auto" Margin="0,25,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True" IsIndeterminate="true" Visibility="Collapsed"/>
+        </StackPanel>
+
+        <StackPanel Name="PersonalPanel" Orientation="Vertical" RelativePanel.AlignHorizontalCenterWithPanel="True" Visibility="Collapsed">
+            <Ellipse Name="Avatar" Width="100" Height="100" Stretch="Uniform" Margin="0,50,0,15">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/Assets/Avatar.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <TextBlock Name="Kickname" TextTrimming="WordEllipsis" MaxWidth="200" FontSize="20" TextAlignment="Center" Visibility="Collapsed"/>
+            <Button Name="LogoutButton" Content="退出登录" Width="150" HorizontalAlignment="Center" Margin="0,20" Click="LogoutButton_Click"/>
+        </StackPanel>
+
+    </RelativePanel>
+
+</Page>
