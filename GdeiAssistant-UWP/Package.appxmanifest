@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="c115518e-99bc-4a78-b632-e251be974e3f" Publisher="CN=LiSiYi" Version="1.0.0.0" />
-  <mp:PhoneIdentity PhoneProductId="c115518e-99bc-4a78-b632-e251be974e3f" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="354344390D399.58048201CDF5A" Publisher="CN=628DC8D8-914B-4805-8725-4486682BBC23" Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="ce6b272d-ecd6-4a81-9e2e-60c2f4206d90" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>GdeiAssistant</DisplayName>
+    <DisplayName>易小助</DisplayName>
     <PublisherDisplayName>广东第二师范学院</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
