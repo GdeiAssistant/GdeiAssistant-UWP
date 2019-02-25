@@ -55,7 +55,7 @@ namespace GdeiAssistant.Tools
                 }
                 return null;
             }
-            catch (COMException)
+            catch (Exception)
             {
                 return null;
             }
@@ -78,7 +78,7 @@ namespace GdeiAssistant.Tools
                 }
                 return null;
             }
-            catch (COMException)
+            catch (Exception)
             {
                 return null;
             }
