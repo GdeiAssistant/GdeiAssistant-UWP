@@ -100,7 +100,7 @@ namespace GdeiAssistant.Page
             border.Child = textBlock;
             Grid.Children.Add(border);
             Grid.SetRow(border, schedule.row.Value + 2);
-            Grid.SetColumn(border, schedule.column.Value + 2);
+            Grid.SetColumn(border, schedule.column.Value + 1);
             Grid.SetRowSpan(border, schedule.scheduleLength.Value);
             elementList.Add(border);
             scheduleList.Add(schedule);
