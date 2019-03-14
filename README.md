@@ -4,7 +4,7 @@
 
 # 广东二师助手通用Windows版客户端
 
-**广东二师助手**是一款旨在为广东第二师范学院在校师生提供最便捷获取校园生活、社团活动、教务信息的校园应用，提供了课表查询、成绩查询、四六级考试成绩查询、校园卡充值挂失和消费查询等综合性的服务与功能。
+**广东第二师范学院校园助手系统通用Windows平台客户端应用**，最低兼容Windows 10（10.0；版本10240），支持Windows 10桌面版和移动版。应用目前提供了课表查询功能，支持切换深色主题。主要涉及网络和Web服务、JSON数据的解析和序列化、响应式布局设计和基础控件应用、凭据保险箱等技术。应用的后端API数据接口由广东第二师范学院校园助手系统提供。
 
 ## 功能
 
@@ -13,9 +13,9 @@
 ## 预览
 
 <p>
-  <img width="250" src="./github/screenshot_01.jpg">
-  <img width="250" src="./github/screenshot_02.jpg">
-  <img width="250" src="./github/screenshot_03.jpg">
+  <img width="250" src="./github/screenshot_01.png">
+  <img width="250" src="./github/screenshot_02.png">
+  <img width="250" src="./github/screenshot_03.png">
 </p>
 
 ## 日志
