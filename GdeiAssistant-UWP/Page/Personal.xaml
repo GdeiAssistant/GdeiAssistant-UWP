@@ -79,7 +79,7 @@
                     <ImageBrush ImageSource="/Assets/Avatar.png"/>
                 </Ellipse.Fill>
             </Ellipse>
-            <TextBlock Name="Kickname" TextTrimming="WordEllipsis" MaxWidth="200" FontSize="20" TextAlignment="Center" Visibility="Collapsed"/>
+            <TextBlock Name="nickname" TextTrimming="WordEllipsis" MaxWidth="200" FontSize="20" TextAlignment="Center" Visibility="Collapsed"/>
             <Button Name="LogoutButton" Content="退出登录" Width="150" HorizontalAlignment="Center" Margin="0,20" Click="LogoutButton_Click"/>
         </StackPanel>
 

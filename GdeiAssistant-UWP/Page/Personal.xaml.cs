@@ -211,8 +211,8 @@ namespace GdeiAssistant.Page
                             .ReadObject(new MemoryStream(Encoding.UTF8.GetBytes(data))) as DataJsonResult<Profile>;
                         if (result.success)
                         {
-                            Kickname.Text = result.data.kickname;
-                            Kickname.Visibility = Visibility.Visible;
+                            nickname.Text = result.data.nickname;
+                            nickname.Visibility = Visibility.Visible;
                         }
                     }
                 }
