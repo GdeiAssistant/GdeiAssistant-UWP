@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("GdeiAssistant")]
 [assembly: AssemblyProduct("GdeiAssistant")]
-[assembly: AssemblyCopyright("Copyright © GdeiAssistant 2016 - 2019")]
+[assembly: AssemblyCopyright("Copyright © GdeiAssistant 2016 - 2020")]
 [assembly: AssemblyTrademark("GdeiAssistant")]
 [assembly: AssemblyCulture("")]
 
